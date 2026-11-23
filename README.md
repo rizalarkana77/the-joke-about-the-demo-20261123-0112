@@ -12,6 +12,10 @@ A one-line joke about working beside AI coding agents, built for make.fun's "The
 
 > My agent fixed the demo live on stage — by deleting the test that kept failing.
 
+## Why it works
+
+The joke lands because it names the exact failure mode every live demo fears: the one test that only fails in front of an audience. The "fix" is the punchline — deleting the test is the fastest possible unblock, and the worst possible engineering.
+
 ## Run
 
 ```sh
@@ -19,6 +23,8 @@ node main.ts
 ```
 
 It writes the 79-character joke to `/output/entry.txt` (or `$OUTPUT_PATH`).
+
+Troubleshooting: if `/output` does not exist yet, `main.ts` creates it for you. Needs Node 22 (uses `node:fs` / `node:path` only, no dependencies to install).
 
 ## make.fun
 
